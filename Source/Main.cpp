@@ -38,7 +38,7 @@ int main()
 	bool quit = false;
 	string name = getName(); //Setting name to the function
 	
-	string answers[] = { "I would tell you the answer, but you wouldn't like it.", "I would tell you the answer, but you wouldn't read it." \
+	string answers[] = { "I would tell you the answer, but you wouldn't like it.", "I would tell you the answer, but you wouldn't read it.", \
 		"*Sigh* I'm the most powerful browser in the world, but you just want me to do that.", "Yes, I know the answer but it's completely rubbish and boring, like me." \
 	};
 
@@ -49,7 +49,7 @@ int main()
 	while (quit == false)
 	{
 		cout << "> ";
-		cin >> ans;
+		getline(cin, ans);
 		if (ans == "quit" || ans == "Quit" || ans == "QUIT")
 		{
 			quit = true;
