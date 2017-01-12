@@ -50,12 +50,11 @@ int main()
 	{
 		cout << "> ";
 		getline(cin, ans);
+		cout << answers[rand() % ARRAY_SIZE] << endl;
 		if (ans == "quit" || ans == "Quit" || ans == "QUIT")
 		{
 			quit = true;
 		}
-		
-		cout << answers[rand() % ARRAY_SIZE] << endl;
 	}
 	return 0;
 }
